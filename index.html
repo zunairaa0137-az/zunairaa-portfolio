@@ -6,11 +6,23 @@
   <title>Zunaira Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
+<script>
+const toggle = document.getElementById("darkToggle");
+
+toggle.onclick = () => {
+  document.body.classList.toggle("dark");
+};
+</script>
+
 <body>
+    
 
 <!-- NAVBAR -->
+
+
 <nav>
-  <h2>Zunaira</h2>
+    <h1><button id="darkToggle"><b>Zunaira</b>🌙</button></h1>
+
   <ul>
     <li><a href="#about">About</a></li>
     <li><a href="#skills">Skills</a></li>
@@ -62,13 +74,15 @@
 <!-- CONTACT -->
 <section id="contact">
   <h2>Contact Me</h2>
-  <p>Email: zunairaa.0137@gmail.com</p>
-  <p>Phone: +92 310 7278023</p>
-</section>
 
-<footer>
-  <p>© 2026 Zunaira Asif</p>
-</footer>
+  <form action="https://formspree.io/f/abcd1234" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+
+</section>
 
 </body>
 </html>
